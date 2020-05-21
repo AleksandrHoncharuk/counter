@@ -1,0 +1,46 @@
+.App {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .counter-wrapper {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-size: 30px;
+      height: fit-content;
+      width: 50px;
+      text-align: center;
+    }
+
+    .btn {
+      height: 50px;
+      width: 40px;
+      border-radius: 50%;
+      font-size: 25px;
+      font-family: "Roboto", sans-serif;
+      margin: 0 30px;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:active {
+        transform: translateY(5px);
+      }
+    }
+
+    .btn-plus {
+      background-color: rgb(29, 187, 29);
+      box-shadow: 0px 12px 30px 0px rgb(29, 187, 29);
+    }
+
+    .btn-minus {
+      background-color: rgb(255, 0, 0);
+      box-shadow: 0px 12px 30px 0px rgba(255, 0, 0, 0.993);
+    }
+  }
+}
